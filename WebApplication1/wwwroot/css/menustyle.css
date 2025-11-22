@@ -1,0 +1,21 @@
+﻿.menu {
+    list-style-type:none;
+    padding-left:0;
+    margin-left:0;
+}
+.menu a{
+    text-decoration:none;
+    font-family:sans-serif;
+    color:aqua;
+    display:inline-blockl;
+    padding:10px 40px;
+    background-color:burlywood;
+    border-bottom: 5px solid;
+}
+.menu li{
+    float:left;
+
+}
+.menu a:hover {
+    background-color:chocolate;
+}
