@@ -15,7 +15,7 @@ namespace WebApplication1.Models
         [UIHint("Почту")]
         [EmailAddress]
         [Required(ErrorMessage = "Введите Почту")]
-        [RegularExpression(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", ErrorMessage = "Почта не валидна")]
+        [RegularExpression(@"^[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}$", ErrorMessage = "Почта не валидна")]
         public string Email { get; set; }
         [Display(Name = "Пароль")]
         [UIHint("Пароль")]
@@ -33,8 +33,8 @@ namespace WebApplication1.Models
         [Display(Name = "Возраст")]
         [Range(17, 70, ErrorMessage = "Ваш возраст должен быть от 17 до 70 лет")]
         public int? Age { get; set; }
-        [Display(Name = "Согласны ли с условием?")]
-        [Required(ErrorMessage = "Поставьте галочку")]
+        [Display(Name = "Соглашаюсь на обработку персональных данных в соответствии с условиями")]
+        //[Required(ErrorMessage = "Поставьте галочку")]
         public bool isAgree { get; set; }
 
     }

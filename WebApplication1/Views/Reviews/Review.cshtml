@@ -1,75 +1,79 @@
-﻿<!DOCTYPE html>
+﻿@model List<BannerItem>
+<!DOCTYPE html>
 <html data-wf-page="666001600530be8dd46480dc" data-wf-site="666001600530be8dd46480e1">
 <head>
 </head>
 <body class="body">
-	<section id="testimonial" class="section">
-		<div class="tour-packege-section-shadow"></div>
-		<div class="w-layout-blockcontainer container w-container">
-			<h2 data-w-id="b8e8197e-04a7-e41f-a77b-e1ed848248f4" style="opacity:0" class="h2-heading heading-center">Почему путешественники выбирают нас</h2>
-			<div data-delay="4000"
-				 data-animation="slide"
-				 class="testimonial-slider-div w-slider"
-				 data-autoplay="false"
-				 data-easing="ease"
-				 style="opacity:0"
-				 data-hide-arrows="false"
-				 data-disable-swipe="false"
-				 data-w-id="9cbb818a-2a89-ac48-b12b-f825aae29a42"
-				 data-autoplay-limit="0"
-				 data-nav-spacing="6"
-				 data-duration="500"
-				 data-infinite="true">
-				<div class="w-slider-mask">
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user1.jpg" loading="lazy" alt="user image" class="user-image" />
-							<h3 class="h5-heading">olivia cole</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
+	@foreach (BannerItem item in Model)
+	{
+		<section id="testimonial" class="section">
+			<div class="tour-packege-section-shadow"></div>
+			<div class="w-layout-blockcontainer container w-container">
+				<h2 data-w-id="b8e8197e-04a7-e41f-a77b-e1ed848248f4" style="opacity:0" class="h2-heading heading-center">@Model[6].Title</h2>
+				<div data-delay="4000"
+				data-animation="slide"
+				class="testimonial-slider-div w-slider"
+				data-autoplay="false"
+				data-easing="ease"
+				style="opacity:0"
+				data-hide-arrows="false"
+				data-disable-swipe="false"
+				data-w-id="9cbb818a-2a89-ac48-b12b-f825aae29a42"
+				data-autoplay-limit="0"
+				data-nav-spacing="6"
+				data-duration="500"
+				data-infinite="true">
+					<div class="w-slider-mask">
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[7].ImagePath" loading="lazy" alt="user image" class="user-image" />
+								<h3 class="h5-heading">@Model[7].Title</h3>
+								<p class="small-paragraph">@Model[7].Subtitle</p>
+							</div>
+						</div>
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[8].ImagePath" loading="lazy" alt="user image" class="user-image" />
+								<h3 class="h5-heading">@Model[8].Title</h3>
+								<p class="small-paragraph">@Model[8].Subtitle</p>
+							</div>
+						</div>
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[9].ImagePath" loading="lazy" alt="user image" class="user-image" />
+								<h3 class="h5-heading">@Model[9].Title</h3>
+								<p class="small-paragraph">@Model[9].Subtitle</p>
+							</div>
+						</div>
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[8].ImagePath" loading="lazy" alt="Client Image" class="user-image" />
+								<h3 class="h5-heading">@Model[8].Title</h3>
+								<p class="small-paragraph">@Model[8].Subtitle</p>
+							</div>
+						</div>
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[9].ImagePath" loading="lazy" alt="Client Image" class="user-image" />
+								<h3 class="h5-heading">@Model[9].Title</h3>
+								<p class="small-paragraph">@Model[9].Subtitle</p>
+							</div>
+						</div>
+						<div class="testimonial-slider w-slide">
+							<div class="testimonial-card">
+								<img src="@Model[7].ImagePath" loading="lazy" alt="Client Image" class="user-image" />
+								<h3 class="h5-heading">@Model[7].Title</h3>
+								<p class="small-paragraph">@Model[7].Subtitle</p>
+							</div>
 						</div>
 					</div>
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user2.jpg" loading="lazy" alt="user image" class="user-image" />
-							<h3 class="h5-heading">Даже белый</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-						</div>
-					</div>
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user3.jpg" loading="lazy" alt="user image" class="user-image" />
-							<h3 class="h5-heading">Джон Миллер</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-						</div>
-					</div>
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user2.jpg" loading="lazy" alt="Client Image" class="user-image" />
-							<h3 class="h5-heading">Даже белый</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-						</div>
-					</div>
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user3.jpg" loading="lazy" alt="Client Image" class="user-image" />
-							<h3 class="h5-heading">Джон Миллер</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-						</div>
-					</div>
-					<div class="testimonial-slider w-slide">
-						<div class="testimonial-card">
-							<img src="~/images/user1.jpg" loading="lazy" alt="Client Image" class="user-image" />
-							<h3 class="h5-heading">Оливия Коул</h3>
-							<p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-						</div>
-					</div>
+					<div class="team-slider-arrow-2 w-slider-arrow-left"><div class="w-icon-slider-left"></div></div>
+					<div class="team-slider-arrow-2 w-slider-arrow-right"><div class="w-icon-slider-right"></div></div>
+					<div class="team-slider-nav-2 w-slider-nav w-round"></div>
 				</div>
-				<div class="team-slider-arrow-2 w-slider-arrow-left"><div class="w-icon-slider-left"></div></div>
-				<div class="team-slider-arrow-2 w-slider-arrow-right"><div class="w-icon-slider-right"></div></div>
-				<div class="team-slider-nav-2 w-slider-nav w-round"></div>
 			</div>
-		</div>
-	</section>
+		</section>
+	}
 </body>
 </html>
 

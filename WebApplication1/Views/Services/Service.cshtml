@@ -1,12 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@model List<TourOffer>
+<!DOCTYPE html>
 <html data-wf-page="666001600530be8dd46480dc" data-wf-site="666001600530be8dd46480e1">
-	<head>
-	</head>
-	<body class="body">
+<head>
+</head>
+<body class="body">
+	@foreach (TourOffer item in Model) {
 		<section id="service" class="section">
 			<div class="tour-packege-section-shadow"></div>
 			<div class="w-layout-blockcontainer container w-container">
-			<h2 data-w-id="cd0d4787-a4a1-3ffa-d790-98554f6f16a2" style="opacity:0" class="h2-heading heading-center">Иди куда угодно <span class="h2-span">с нашими последними предложениями туров</span>
+			<h2 data-w-id="cd0d4787-a4a1-3ffa-d790-98554f6f16a2" style="opacity:0" class="h2-heading heading-center">@Model[0].heading <span class="h2-span">с нашими последними предложениями туров</span>
 			</h2>
 				<div data-current="Tab 1" data-easing="ease-in" data-duration-in="300" data-duration-out="100" class="offer-tab w-tabs">
 					<div class="tabs-menu w-tab-menu">
@@ -654,5 +656,6 @@
 				</div>
 			</div>
 		</section>
-	</body>
+	}
+</body>
 </html>

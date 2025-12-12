@@ -1,0 +1,6 @@
+=На выполнение метода WebApplication1.Controllers.HomeController.HomePage (WebApplication1) затрачено 00:00:00.0003872
+На выполнение метода WebApplication1.Controllers.AboutsController.About (WebApplication1) затрачено 00:00:01.5944585
+На выполнение метода WebApplication1.Controllers.HomeController.HomePage (WebApplication1) затрачено 00:00:00.0004441
+На выполнение метода WebApplication1.Controllers.AboutsController.About (WebApplication1) затрачено 00:00:00.5128896
+На выполнение метода WebApplication1.Controllers.Services.Service (WebApplication1) затрачено 00:00:00.0134523
+На выполнение метода WebApplication1.Controllers.Reviews.Review (WebApplication1) затрачено 00:00:00.0480489

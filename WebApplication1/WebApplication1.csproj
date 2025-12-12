@@ -8,24 +8,32 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\img\**" />
+    <Compile Remove="Новая папка2\**" />
     <Content Remove="wwwroot\img\**" />
+    <Content Remove="Новая папка2\**" />
     <EmbeddedResource Remove="wwwroot\img\**" />
+    <EmbeddedResource Remove="Новая папка2\**" />
     <None Remove="wwwroot\img\**" />
+    <None Remove="Новая папка2\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\js\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
 
 </Project>

@@ -8,10 +8,10 @@ namespace WebApplication1.Models
         {
         }
 
-        public DbSet<Team> Teams { get; set; }
-        public DbSet<Position> Positions { get; set; }
+        public DbSet<BannerItem> BannerItems { get; set; }
+        public DbSet<ContactFormModel> Messag { get; set; }
 
-
+        public DbSet<TourOffer> tourOffers { get; set; }
 
 
     }

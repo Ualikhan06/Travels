@@ -1,54 +1,56 @@
-﻿<!DOCTYPE html>
+﻿@model List<BannerItem>
+<!DOCTYPE html>
 <!-- Handled by Exflow.site -->
 <html data-wf-page="666001600530be8dd46480dc" data-wf-site="666001600530be8dd46480e1">
 <head>
 </head>
 <body class="body">
-	<section id="about-us" class="section">
-		<div class="about-section-shadow"></div>
+	@foreach (BannerItem item in Model) {
+		<section id="about-us" class="section">
+			<div class="about-section-shadow"></div>
 		<div class="w-layout-blockcontainer container w-container">
 			<div class="w-layout-grid about">
-				<div class="about-heading-div"><h2 data-w-id="a3766256-bb7e-5414-7dd2-c4e247d88517" style="opacity:0" class="h2-heading">О компании Туристическое агентство</h2></div>
+					<div class="about-heading-div"><h2 data-w-id="a3766256-bb7e-5414-7dd2-c4e247d88517" style="opacity:0" class="h2-heading">@Model[0].Title</h2></div>
 				<div id="w-node-_5c50ddb0-595b-dfc0-5b72-4d79b877379b-d46480dc" class="about-heading-div">
 					<p data-w-id="64761d4c-82c0-f75b-8ec5-a9df3633032d" style="opacity:0" class="paragraph-large">
-						Lorem Ipsum — это просто фиктивный текст, используемый в полиграфии и наборном деле. Lorem Ipsum — это просто фиктивный текст, используемый в полиграфии и наборном деле.
+							@Model[1].Subtitle 
 					</p>
 				</div>
 			</div>
 			<div class="w-layout-grid about-grid">
 				<div data-w-id="407eb939-6850-b88c-f6be-5e7ff81fdb4b" style="opacity:0" class="about-div">
 					<div class="about-card">
-						<img src="~/images/people.png" loading="lazy" alt="people icon" class="about-image" />
+							<img src="@Model[2].ImagePath" loading="lazy" alt="people icon" class="about-image" />
 						<div class="about-feature">
-							<h3 class="h3-heading">3554</h3>
-							<p class="paragraph">Рейсы</p>
+							<h3 class="h3-heading">@Model[2].Title</h3>
+							<p class="paragraph">@Model[2].Subtitle</p>
 						</div>
 					</div>
 				</div>
 				<div id="w-node-d05f9886-18f2-b11a-3f7b-c0a0d4337928-d46480dc" data-w-id="d05f9886-18f2-b11a-3f7b-c0a0d4337928" style="opacity:0" class="about-div">
 					<div class="about-card">
-						<img src="~/images/medal.png" loading="lazy" alt="Certificates icon" class="about-image" />
+							<img src="@Model[3].ImagePath" loading="lazy" alt="Certificates icon" class="about-image" />
 						<div class="about-feature">
-							<h3 class="h3-heading">280</h3>
-							<p class="paragraph">Сертификаты</p>
+							<h3 class="h3-heading">@Model[3].Title</h3>
+								<p class="paragraph">@Model[3].Subtitle</p>
 						</div>
 					</div>
 				</div>
 				<div id="w-node-_8eb8f8ae-1ed1-53fb-9ee1-69250fd0c371-d46480dc" data-w-id="8eb8f8ae-1ed1-53fb-9ee1-69250fd0c371" style="opacity:0" class="about-div">
 					<div class="about-card">
-						<img src="~/images/award.png" loading="lazy" alt="award icon" class="about-image" />
+						<img src="@Model[4].ImagePath" loading="lazy" alt="award icon" class="about-image" />
 						<div class="about-feature">
-							<h3 class="h3-heading">120</h3>
-							<p class="paragraph">Награды</p>
+							<h3 class="h3-heading">@Model[4].Title</h3>
+							<p class="paragraph">@Model[4].Subtitle</p>
 						</div>
 					</div>
 				</div>
 				<div id="w-node-_7b3e0b4a-77fd-1a48-02e2-0e8e543d272e-d46480dc" data-w-id="7b3e0b4a-77fd-1a48-02e2-0e8e543d272e" style="opacity:0" class="about-div">
 					<div class="about-card">
-						<img src="~/images/star.png" loading="lazy" alt="star icon" class="about-image" />
+						<img src="@Model[5].ImagePath" loading="lazy" alt="star icon" class="about-image" />
 						<div class="about-feature">
-							<h3 class="h3-heading">390</h3>
-							<p class="paragraph">Обзоры</p>
+							<h3 class="h3-heading">@Model[5].Title</h3>
+							<p class="paragraph">@Model[5].Subtitle</p>
 						</div>
 					</div>
 				</div>
@@ -83,5 +85,6 @@
 		</a>
 		</div>
 	</section>
+	}
 </body>
 </html>
